@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".proteins">
+
+    <ImageView
+        android:id="@+id/imgmeat"
+        android:layout_width="193dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/etnyama"
+        app:layout_constraintEnd_toStartOf="@+id/imgfish"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/chc" />
+
+    <ImageView
+        android:id="@+id/imgegg"
+        android:layout_width="167dp"
+        android:layout_height="196dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/etmayai"
+        app:layout_constraintEnd_toStartOf="@+id/imgnyama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/eggs" />
+
+    <ImageView
+        android:id="@+id/imgfish"
+        android:layout_width="187dp"
+        android:layout_height="177dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/etfish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgmeat"
+        app:srcCompat="@drawable/fish" />
+
+    <ImageView
+        android:id="@+id/imgmilk"
+        android:layout_width="195dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/etmilk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgyohgurt"
+        app:srcCompat="@drawable/milk" />
+
+    <ImageView
+        android:id="@+id/imgyohgurt"
+        android:layout_width="191dp"
+        android:layout_height="209dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/etyoghut"
+        app:layout_constraintEnd_toStartOf="@+id/imgmilk"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/yohh" />
+
+    <ImageView
+        android:id="@+id/imgnyama"
+        android:layout_width="197dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/etnyamaa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgegg"
+        app:srcCompat="@drawable/meat" />
+
+    <TextView
+        android:id="@+id/etnyama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="Chicken"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgegg"
+        app:layout_constraintEnd_toStartOf="@+id/etfish"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/etfish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="7dp"
+        android:text="Fish"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgnyama"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imgnyama" />
+
+    <TextView
+        android:id="@+id/etmayai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="244dp"
+        android:layout_marginBottom="16dp"
+        android:text="eggs"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgyohgurt"
+        app:layout_constraintEnd_toStartOf="@+id/etnyamaa" />
+
+    <TextView
+        android:id="@+id/etnyamaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="4dp"
+        android:text="Meat"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgmilk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imgmilk" />
+
+    <TextView
+        android:id="@+id/etyoghut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="Yoghurt"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/etmilk"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/etmilk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="Milk"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etyoghut" />
+</androidx.constraintlayout.widget.ConstraintLayout>

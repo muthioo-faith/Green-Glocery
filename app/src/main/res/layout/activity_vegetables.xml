@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Vegetables">
+
+    <ImageView
+        android:id="@+id/imgcabbage"
+        android:layout_width="179dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgdania"
+        app:layout_constraintEnd_toStartOf="@+id/imgmch"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cabbage" />
+
+    <ImageView
+        android:id="@+id/imgdania"
+        android:layout_width="152dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbrijal"
+        app:layout_constraintEnd_toStartOf="@+id/imgbrijal"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgbrijal"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/dania" />
+
+    <ImageView
+        android:id="@+id/imgmch"
+        android:layout_width="169dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgbrijal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgcabbage"
+        app:srcCompat="@drawable/mchicha" />
+
+    <ImageView
+        android:id="@+id/imgsukuma"
+        android:layout_width="185dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSukuma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgkamande"
+        app:srcCompat="@drawable/sukuma" />
+
+    <ImageView
+        android:id="@+id/imgkamande"
+        android:layout_width="194dp"
+        android:layout_height="185dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnKamande"
+        app:layout_constraintEnd_toStartOf="@+id/imgsukuma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgsukuma"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/kamande" />
+
+    <ImageView
+        android:id="@+id/imgbrijal"
+        android:layout_width="193dp"
+        android:layout_height="159dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnBrijal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/brinjal" />
+
+    <TextView
+        android:id="@+id/etmore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="More"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgcabbage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCabbage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Cabbages"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/imgdania"
+        app:layout_constraintEnd_toStartOf="@+id/btnMchicha"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnMchicha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="8dp"
+        android:text="Mchicha"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgbrijal"
+        app:layout_constraintStart_toEndOf="@+id/imgcabbage" />
+
+    <Button
+        android:id="@+id/btnDania"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:text="Dania"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgkamande"
+        app:layout_constraintTop_toTopOf="@+id/btnBrijal"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="-8dp" />
+
+    <Button
+        android:id="@+id/btnBrijal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="308dp"
+        android:layout_marginBottom="4dp"
+        android:text="Brijal"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgsukuma"
+        app:layout_constraintStart_toStartOf="@+id/btnDania" />
+
+    <Button
+        android:id="@+id/btnKamande"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:text="Kamande"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <Button
+        android:id="@+id/btnSukuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="Sukuma"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.993"
+        app:layout_constraintStart_toEndOf="@+id/imgsukuma" />
+</androidx.constraintlayout.widget.ConstraintLayout>

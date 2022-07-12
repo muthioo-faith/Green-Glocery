@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Onions">
+
+    <ImageView
+        android:id="@+id/imgoni"
+        android:layout_width="192dp"
+        android:layout_height="213dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgroots"
+        app:layout_constraintEnd_toStartOf="@+id/imgtangawizi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/onion" />
+
+    <ImageView
+        android:id="@+id/imgtangawizi"
+        android:layout_width="195dp"
+        android:layout_height="216dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/ettang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgoni"
+        app:srcCompat="@drawable/tangawizi" />
+
+    <ImageView
+        android:id="@+id/imgroots"
+        android:layout_width="208dp"
+        android:layout_height="206dp"
+        android:layout_marginEnd="184dp"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/onio" />
+
+    <ImageView
+        android:id="@+id/imgsaumu"
+        android:layout_width="197dp"
+        android:layout_height="207dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="128dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgroots"
+        app:srcCompat="@drawable/saumu" />
+
+    <TextView
+        android:id="@+id/ettyp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="7dp"
+        android:text="Types"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgtangawizi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/etonio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="Onion"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgroots"
+        app:layout_constraintEnd_toStartOf="@+id/ettang"
+        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/ettang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginBottom="16dp"
+        android:text="Tangawizi"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgsaumu"
+        app:layout_constraintStart_toEndOf="@+id/etonio" />
+
+    <TextView
+        android:id="@+id/etgreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="37dp"
+        android:text="Scallions"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/etsaumu"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/etsaumu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginBottom="36dp"
+        android:text="Saumu"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/etgreen" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

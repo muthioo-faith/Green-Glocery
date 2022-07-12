@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".categories">
+
+    <TextView
+        android:id="@+id/etvegetables"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Vegetables"
+        android:textColor="#EF0808"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <ImageView
+        android:id="@+id/imgtomato"
+        android:layout_width="173dp"
+        android:layout_height="185dp"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgcaul"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgcaul"
+        app:srcCompat="@drawable/tomato" />
+
+    <ImageView
+        android:id="@+id/imgcaul"
+        android:layout_width="184dp"
+        android:layout_height="187dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgcabb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgtomato"
+        app:srcCompat="@drawable/brinjal" />
+
+    <ImageView
+        android:id="@+id/imgpum"
+        android:layout_width="171dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgcabb"
+        app:layout_constraintEnd_toStartOf="@+id/imgcabb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgcabb"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/pumkin" />
+
+    <ImageView
+        android:id="@+id/imgcabb"
+        android:layout_width="163dp"
+        android:layout_height="171dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgonion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgpum"
+        app:srcCompat="@drawable/caili" />
+
+    <ImageView
+        android:id="@+id/imgovacado"
+        android:layout_width="191dp"
+        android:layout_height="171dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgonion"
+        app:layout_constraintEnd_toStartOf="@+id/imgonion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgonion"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/avocado" />
+
+    <ImageView
+        android:id="@+id/imgonion"
+        android:layout_width="184dp"
+        android:layout_height="171dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnwelcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgovacado"
+        app:srcCompat="@drawable/onion" />
+
+    <Button
+        android:id="@+id/btnwelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="11dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Welcome"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
